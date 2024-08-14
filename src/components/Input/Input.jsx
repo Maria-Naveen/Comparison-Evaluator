@@ -1,7 +1,10 @@
-const Input = ({ type, onChange }) => {
+const Input = ({ id, label, type, onChange, className }) => {
   return (
     <div>
-      <input type={type} onChange={onChange} />
+      <label className="font-bold px-2" htmlFor={id}>
+        {label}
+      </label>
+      <input type={type} onChange={onChange} className={className} />
     </div>
   );
 };
