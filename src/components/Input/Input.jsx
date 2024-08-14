@@ -1,7 +1,7 @@
-const Input = ({ onChange }) => {
+const Input = ({ type, onChange }) => {
   return (
     <div>
-      <input type="number" onChange={onChange} />
+      <input type={type} onChange={onChange} />
     </div>
   );
 };
